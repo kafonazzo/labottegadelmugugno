@@ -332,6 +332,24 @@ body {
     color: #666;
 }
 
+/* --- VERSIONE MOBILE: UNA SOLA COLONNA CENTRATA --- */
+@media (max-width: 768px) {
+    .servizi-container {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+
+    .servizio {
+        background: #fff;
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        margin: 0 auto;
+    }
+}
+
+
 /* === Galleria === */
 .titolo-sezione {
     text-align: center;
