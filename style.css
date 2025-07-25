@@ -279,6 +279,59 @@ body {
     flex-direction: row-reverse;
 }
 
+/* --- SEZIONE SERVIZI --- */
+.servizi {
+    text-align: center;
+    padding: 50px 20px;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.servizi h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.servizi-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.servizio {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servizio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.servizio img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.servizio h3 {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.servizio p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
 /* === Galleria === */
 .titolo-sezione {
     text-align: center;
