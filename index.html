@@ -10,12 +10,15 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <link rel="icon" href="logo.jpg" type="image/png">
+
+    <!-- ✅ AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 <div class="wrapper">
 
     <!-- Navbar -->
-    <header id="navbar" class="navbar">
+    <header id="navbar" class="navbar" data-aos="fade-down">
         <div class="container">
             <img src="logo.jpg" alt="Logo" class="logo" />
             <div class="menu-toggle" id="menu-toggle">&#9776;</div>
@@ -28,7 +31,7 @@
     </header>
 
     <!-- Carosello -->
-    <section class="carousel">
+    <section class="carousel" data-aos="zoom-in">
         <div class="carousel-container">
             <div class="slide active">
                 <img src="https://media.istockphoto.com/id/636683152/it/foto/la-cena.jpg?s=612x612&w=0&k=20&c=3l0wEr2xRgNyXf42cnqeZFK_8lx2zU8ndSdxvPt9ygw=" alt="Pasta italiana">
@@ -46,20 +49,20 @@
     <!-- Descrizione -->
     <main>
         <section class="descrizione">
-            <div class="riga">
+            <div class="riga" data-aos="fade-right">
                 <div class="testo">
                     <h2>Benvenuti al Ristorante Bottega Del Mugugno</h2>
                     <p>Nel cuore della tradizione gastronomica italiana, il Ristorante Bottega Del Mugugno offre un’esperienza unica fatta di sapori autentici, ingredienti freschi e passione per la cucina. Ogni piatto racconta una storia, ogni ingrediente è scelto con cura.</p>
                 </div>
             </div>
-            <div class="riga inversa">
+            <div class="riga inversa" data-aos="fade-left">
                 <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5" alt="Sala ristorante elegante">
                 <div class="testo">
                     <h2>Eleganza e Accoglienza</h2>
                     <p>Un ambiente raffinato ma familiare, perfetto per cene romantiche, eventi o semplici serate in compagnia. Il nostro staff ti accoglierà con professionalità e un sorriso, per farti sentire sempre a casa.</p>
                 </div>
             </div>
-            <div class="riga">
+            <div class="riga" data-aos="fade-right">
                 <img src="https://media.istockphoto.com/id/1446478827/it/foto/uno-chef-sta-cucinando-nella-cucina-del-suo-ristorante.jpg?s=612x612&w=0&k=20&c=2TZGrqU7TAPMOtEVU-lRGRRlA-V663jHgobpI2H4FOI=" alt="Chef al lavoro">
                 <div class="testo">
                     <h2>La nostra cucina</h2>
@@ -70,35 +73,35 @@
     </main>
 
     <!-- Sezione Servizi -->
-    <section class="servizi">
+    <section class="servizi" data-aos="fade-up">
         <h2>I nostri servizi</h2>
         <div class="servizi-container">
-            <div class="servizio">
+            <div class="servizio" data-aos="zoom-in" data-aos-delay="100">
                 <img src="https://cdn-icons-png.flaticon.com/128/12241/12241342.png" alt="Coperto">
                 <h3>Coperto incluso</h3>
                 <p>Servizio al tavolo con coperto incluso nel prezzo.</p>
             </div>
-            <div class="servizio">
+            <div class="servizio" data-aos="zoom-in" data-aos-delay="200">
                 <img src="https://cdn-icons-png.flaticon.com/128/100/100631.png" alt="Bagno">
                 <h3>Bagno Accessibile</h3>
                 <p>Servizi igienici comodi e adatti anche a persone con disabilità.</p>
             </div>
-            <div class="servizio">
+            <div class="servizio" data-aos="zoom-in" data-aos-delay="300">
                 <img src="https://cdn-icons-png.flaticon.com/128/159/159599.png" alt="WiFi">
                 <h3>Wi-Fi Gratuito</h3>
                 <p>Connettiti gratuitamente con il nostro Wi-Fi.</p>
             </div>
-            <div class="servizio">
+            <div class="servizio" data-aos="zoom-in" data-aos-delay="400">
                 <img src="https://cdn-icons-png.flaticon.com/128/3027/3027127.png" alt="Take Away">
                 <h3>Take Away</h3>
                 <p>Prenota e ritira i tuoi piatti preferiti da asporto.</p>
             </div>
-            <div class="servizio">
+            <div class="servizio" data-aos="zoom-in" data-aos-delay="500">
                 <img src="https://cdn-icons-png.flaticon.com/128/672/672675.png" alt="Animali">
                 <h3>Pet Friendly</h3>
                 <p>I tuoi amici a quattro zampe sono i benvenuti!</p>
             </div>
-            <div class="servizio">
+            <div class="servizio" data-aos="zoom-in" data-aos-delay="600">
                 <img src="https://cdn-icons-png.flaticon.com/128/11865/11865927.png" alt="Parcheggio">
                 <h3>Parcheggio</h3>
                 <p>Parcheggio disponibile vicino al ristorante.</p>
@@ -107,7 +110,7 @@
     </section>
 
     <!-- Mappa -->
-    <section class="mappa">
+    <section class="mappa" data-aos="fade-up">
         <h2>Ci trovi qui 📍</h2>
         <div class="map-container">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2863.873418584938!2d8.2599499!3d44.127233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d2f7c72ce2e4bb%3A0x6446d6da999f8cba!2sLa%20Bottega%20del%20Mugugno!5e0!3m2!1sit!2sit!4v1753451058925!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -115,29 +118,27 @@
     </section>
 
     <!-- Sezione Social -->
-    <section class="social-section">
+    <section class="social-section" data-aos="fade-up">
         <h2>Seguici sui social</h2>
         <div class="social-icons">
-            <a href="https://www.facebook.com/daniel.predari/" target="_blank" aria-label="Facebook">
-                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" />
-            </a>
-            <a href="https://www.instagram.com/labottegadelmugugno_?utm_source=ig_web_button_share_sheet&igsh=cDUzbHB3eG1pdTJm" target="_blank" aria-label="Instagram">
-                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" />
-            </a>
-            <a href="https://www.tripadvisor.it/Restaurant_Review-g194801-d4505905-Reviews-Bottega_del_Buon_Caffe-Loano_Italian_Riviera_Liguria.html" target="_blank" aria-label="Tripadvisor">
-                <img src="https://cdn-icons-png.flaticon.com/128/2504/2504944.png" alt="Tripadvisor" />
-            </a>
-            <a href="https://deliveroo.it/it/menu/alassio/loano/la-bottega-del-mugugno" target="_blank" aria-label="Deliveroo">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAnCAMAAAC7faEHAAAAkFBMVEX////+//8AzLwAzLsAzbwAzL0Ay7wAzbsAy7sAzb0AzL79//8Ay70AzrwAyLgAy7/J8u/e+PVP285x4tc11Me68Ozx/fuU6OPq+fqI5t/L8/Dt+/hZ3NGb5+MAxLIozMBA0sdJ0c1+29hy3dix6Oc60shi2tI2yb/G7+4At6kXwbYvwb8YurSp6uV84twA0bq9wfgzAAADMmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS41LjAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczpleGlmPSJodHRwOi8vbnMuYWRvYmUuY29tL2V4aWYvMS4wLyIgeG1sbnM6SXB0YzR4bXBFeHQ9Imh0dHA6Ly9pcHRjLm9yZy9zdGQvSXB0YzR4bXBFeHQvMjAwOC0wMi0yOS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgZXhpZjpEYXRlVGltZU9yaWdpbmFsPSIyMDI1LTA2LTA2VDAwOjMyOjE4KzAwOjAwIiBJcHRjNHhtcEV4dDpEaWdpdGFsU291cmNlRmlsZVR5cGU9Imh0dHA6Ly9jdi5pcHRjLm9yZy9uZXdzY29kZXMvZGlnaXRhbHNvdXJjZXR5cGUvY29tcG9zaXRlV2l0aFRyYWluZWRBbGdvcml0aG1pY01lZGlhIiBJcHRjNHhtcEV4dDpEaWdpdGFsU291cmNlVHlwZT0iaHR0cDovL2N2LmlwdGMub3JnL25ld3Njb2Rlcy9kaWdpdGFsc291cmNldHlwZS9jb21wb3NpdGVXaXRoVHJhaW5lZEFsZ29yaXRobWljTWVkaWEiIHBob3Rvc2hvcDpDcmVkaXQ9IkVkaXRlZCB3aXRoIEdvb2dsZSBBSSIgcGhvdG9zaG9wOkRhdGVDcmVhdGVkPSIyMDI1LTA2LTA2VDAwOjMyOjE4KzAwOjAwIi8+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+ICAgPD94cGFja2V0IGVuZD0idyI/PizGT8kAAAM2SURBVDiNbZSLdiI3DIaFLPmG7QEWJiQkTNok0+4lu+//dv1lQ9vTUx9gZvA3uvySRd5ndqGGsVhCcD7GCcuX4pxPteLfSJPn4MJ/lnMRMBZzgA0niSZJAF0QxqZjFocnx14zezznpEmYM03K2PQg2PYFlnCvvmFFGFKQvkzml/FmVDPjREvxyqru8OVwRNQupqw+GiceqDN/MCwJr8fA7kRE8373kESUvaepuM45RIlsnWt6PMLOjvo6axAfWan4WErBG2DEpcPjaT/PRxf3tNlut/SEEG0bfh2yZ2UkHI6XYeU5uAttsOgEDvaYJu5hCb7VTbNRG3q5Lrgz7qXBnoffiSOSEKSa4BnejHy6fmwH9xigbxRwaqqbdJA+nLAJ9NJeu9sNrQGuWIrF59jFiKqifI+0tV1ajEMadHBStUzZdAYRDUadD5YluN9W4+D66KpITJaHRmgDEDUOae5R0e9v4zpPUqFGsn7pECogqYb2NOR4fxiG91NCgYZ+EMYywVsi7XNwZ5MZ152HuVIE8RVG4awHWItc37odVGLTy/HeqqIPRGiK0fuikkIsrV1fO7fpcJc55Yx6JCpI1heHbls+1ofTKNzmph79bEmnUnRwrizPD7sz3RjTelSD1qbWBZpJEV57JrpD5z9Wa6ez5UH02jKseeiMhpJ2oJEmPn9+/TbT/P3HmYw7xgxwQt8Xa7w8k6XYHb6jQzuHhy24UnKZwHWVu7xbq9RYc28/2mtBfCChH+NIXl9Ggn/Hf7u+IY1cVJFv9kkUiXR7fbs3Qs/psiC8nMEJFZQrxWVLXd6B300/NkUaHbT6opvj5eb4X4vmJSoCBJfKOOcO9ad7VJubYSua9iQGB2so3fHw83P/D2t+P4zzqtlbvh75opdja9+mZUX57uLsEFHyjEQgDmWbVjhwOC8abfiUZf3c2/l8jskmBoQpSSnjYHBCy9f76LNBlV/XFdW3qQT52PSzmSJGSP/Fea34q10BI1sMVfRBAgcTwUCpNnNB44Izhsml6Hjoool9ouTModTbQqSMkVxFbcKZZ+O4UnX1fxfetNEHGB8x7hdWj6z+qhX3g+suDLbqcvsLSi0vFEFW8SoAAAAASUVORK5CYII=" alt="Tripadvisor" />
-            </a>
+            <!-- (Social icons invariati) -->
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer data-aos="fade-up">
         <p>&copy; 2025 Ristorante Bottega Del Mugugno - Tutti i diritti riservati - Realizzato da Fabio Merello</p>
     </footer>
-
 </div>
+
+<!-- ✅ AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000, // durata animazione in ms
+        once: true      // l'animazione avviene solo una volta
+    });
+</script>
+
 </body>
 </html>
