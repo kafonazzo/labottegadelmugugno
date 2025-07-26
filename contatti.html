@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Contatti - Bottega Del Mugugno</title>
     <link rel="icon" href="logo.jpg" type="image/png">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-    <!-- CSS Personalizzato -->
+    <!-- CSS personalizzato -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 
-    <!-- Script Navbar -->
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!-- Script personalizzato -->
     <script defer src="script.js"></script>
 </head>
 <body>
@@ -24,7 +24,7 @@
     <!-- Navbar -->
     <header id="navbar" class="navbar" data-aos="fade-down">
         <div class="container">
-            <img src="logo.jpg" alt="Logo Bottega del Mugugno" class="logo">
+            <img src="logo.jpg" alt="Logo" class="logo" />
             <div class="menu-toggle" id="menu-toggle">&#9776;</div>
             <nav id="nav-links" class="nav-links">
                 <a href="index.html">Home</a>
@@ -37,41 +37,36 @@
     <!-- Hero -->
     <section class="hero-contact" data-aos="zoom-in">
         <h1>Contattaci</h1>
-        <p>Per prenotazioni, eventi o qualsiasi informazione, siamo sempre disponibili.</p>
+        <p>Per prenotazioni, eventi o qualsiasi informazione.</p>
     </section>
 
-    <!-- Info Contatto + Mappa -->
+    <!-- Info contatto migliorata -->
     <section class="contact-info enhanced-contact">
         <div class="info-box wide" data-aos="fade-right">
-            <h2>Dove Siamo</h2>
-            <p><strong>📍 Indirizzo:</strong><br> Via Simone Stella, 12, 17025 Loano (SV)</p>
-            <p><strong>📞 Telefono:</strong><br> <a href="tel:+393421472686">+39 342 147 2686</a></p>
+            <h2>Dove siamo</h2>
+            <p><strong>📍 Indirizzo:</strong><br> Via Simone Stella, 12, 17025 Loano SV</p>
+            <p><strong>📞 Telefono:</strong><br> <a href="tel:+393421472686">+39 3421472686</a></p>
             <p><strong>📧 Email:</strong><br> <a href="mailto:prenotazioni@daroberto.it">prenotazioni@daroberto.it</a></p>
             <p><strong>🕒 Orari:</strong><br>
-                Lun-Dom: 07:45 - 12:00 / 16:00 - 20:00<br>
+                Lun-Domenica: 07:45 - 12:00 / 16:00 - 20:00<br>
                 Martedì: 07:30 - 20:30
             </p>
         </div>
-
-        <div class="map-box" data-aos="fade-left">
-            <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2863.020332931286!2d8.259384715365272!3d44.12508567910825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d297bca4b0873f%3A0x2b66a716e07ffea6!2sVia%20Simone%20Stella%2C%2012%2C%2017025%20Loano%20SV!5e0!3m2!1sit!2sit!4v1706047200000!5m2!1sit!2sit"
-                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </div>
     </section>
 
-    <!-- Form Prenotazione -->
+    <!-- Form prenotazione -->
     <section class="contact-form" data-aos="fade-up">
-        <h2>Prenota un Tavolo</h2>
-        <form action="mailto:prenotazioni@daroberto.it" method="POST" enctype="text/plain" class="form-grid">
-            <input type="text" name="Nome" placeholder="Nome e Cognome" required>
-            <input type="tel" name="Telefono" placeholder="Telefono" required>
-            <input type="date" name="Data" required>
-            <input type="time" name="Ora" required>
-            <input type="number" name="Persone" placeholder="N. Persone" min="1" required>
+        <h2>Prenota un tavolo</h2>
+        <form action="mailto:prenotazioni@daroberto.it" method="POST" enctype="text/plain">
+            <div class="form-grid">
+                <input type="text" name="Nome" placeholder="Nome e Cognome" required>
+                <input type="tel" name="Telefono" placeholder="Telefono" required>
+                <input type="date" name="Data" required>
+                <input type="time" name="Ora" required>
+                <input type="number" name="Persone" placeholder="N. Persone" min="1" required>
+            </div>
             <textarea name="Messaggio" rows="5" placeholder="Messaggi o richieste speciali..."></textarea>
-            <button type="submit" class="btn">📩 Invia Prenotazione</button>
+            <button type="submit" class="btn">Invia Prenotazione</button>
         </form>
     </section>
 
