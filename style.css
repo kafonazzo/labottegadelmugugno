@@ -89,6 +89,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 1rem;
+
 }
 
 .nav-links a {
@@ -136,14 +137,10 @@ body {
         max-height: 0;
         opacity: 0;
         overflow: hidden;
-        background: linear-gradient(
-                to bottom,
-                rgba(75, 30, 30, 0.95) 0%,
-                rgba(75, 30, 30, 0.85) 70%,
-                rgba(75, 30, 30, 0.8) 100%
-        );
-        backdrop-filter: blur(8px);
-        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+        background: transparent; /* niente sfondo */
+        backdrop-filter: none; /* così si vede la sfumatura della navbar dietro */
+        box-shadow: none;
+
         border-radius: 0 0 12px 12px;
         transition: max-height 0.4s ease, opacity 0.4s ease;
     }
@@ -157,7 +154,7 @@ body {
         padding: 0.8rem 0;
         width: 100%;
         text-align: center;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     }
 }
 
