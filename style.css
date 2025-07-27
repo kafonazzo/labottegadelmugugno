@@ -21,6 +21,16 @@ body.loaded {
     opacity: 1;
 }
 
+@media (max-width: 480px) {
+    body {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+    section {
+        padding: 1.5rem 1rem;
+    }
+}
+
 .wrapper {
     min-height: 100%;
     display: flex;
@@ -66,6 +76,7 @@ body {
 }
 
 .nav-links {
+    backdrop-filter: blur(10px);
     display: flex;
     flex-direction: row;
     gap: 1rem;
@@ -201,6 +212,12 @@ body {
     }
     .carousel-overlay-text {
         display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel {
+        height: 45vh;
     }
 }
 
@@ -349,6 +366,17 @@ body {
     }
 }
 
+.call-now {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background: #8B0000;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 50px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
 
 /* === Galleria === */
 .titolo-sezione {
