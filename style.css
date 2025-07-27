@@ -52,15 +52,22 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-/* Navbar base */
+/* === Navbar elegante migliorata === */
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #4b1e1e; /* rosso vino */
-    color: #FDF5E6; /* crema */
+    background: linear-gradient(
+            to bottom,
+            rgba(75, 30, 30, 0.95) 0%,
+            rgba(75, 30, 30, 0.85) 40%,
+            rgba(75, 30, 30, 0.6) 100%
+    );
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    color: #FDF5E6;
     z-index: 1000;
-    transition: transform 0.3s ease;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
     padding: 0.5rem 1.5rem;
 }
 
@@ -72,29 +79,30 @@ body {
 
 .logo {
     height: 60px;
-    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+.logo:hover {
+    transform: scale(1.05);
 }
 
 .nav-links {
-    backdrop-filter: blur(10px);
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    transition: max-height 0.3s ease, opacity 0.3s ease;
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s;
+    transition: color 0.3s, transform 0.2s;
 }
-
 .nav-links a:hover {
     color: #1abc9c;
+    transform: translateY(-2px);
 }
 
-/* Mobile */
+/* === Mobile migliorato === */
 .menu-toggle {
     display: none;
     font-size: 2rem;
@@ -111,7 +119,6 @@ body {
     }
 
     .logo {
-        margin: 0;
         height: 50px;
     }
 
@@ -125,32 +132,35 @@ body {
     .nav-links {
         flex-direction: column;
         align-items: center;
-        overflow: hidden;
-        background-color: #4b1e1e; /* rosso scuro */
         width: 100%;
         max-height: 0;
         opacity: 0;
+        overflow: hidden;
+        background: linear-gradient(
+                to bottom,
+                rgba(75, 30, 30, 0.95) 0%,
+                rgba(75, 30, 30, 0.85) 70%,
+                rgba(75, 30, 30, 0.8) 100%
+        );
+        backdrop-filter: blur(8px);
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+        border-radius: 0 0 12px 12px;
         transition: max-height 0.4s ease, opacity 0.4s ease;
     }
 
     .nav-links.open {
-        max-height: 500px; /* abbastanza per i link */
+        max-height: 500px;
         opacity: 1;
     }
 
     .nav-links a {
-        padding: 0.75rem 0;
+        padding: 0.8rem 0;
         width: 100%;
         text-align: center;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 }
 
-
-@keyframes slideDown {
-    0% { transform: translateY(-100%); opacity: 0; }
-    100% { transform: translateY(0); opacity: 1; }
-}
 
 /* Carosello */
 .carousel {
@@ -209,12 +219,23 @@ body {
 @media(min-width: 769px) {
     .carousel {
         position: relative;
+        height: auto;
+        max-height: none;
     }
+
     .carousel-overlay-text {
         display: block;
     }
-}
 
+    .riga img,
+    .galleria .item img,
+    .carousel img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        border-radius: 0; /* niente bordi arrotondati su mobile */
+    }
+}
 @media (max-width: 480px) {
     .carousel {
         height: 45vh;
@@ -375,6 +396,7 @@ body {
     padding: 12px 18px;
     border-radius: 50px;
     font-weight: bold;
+    text-decoration: none;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
