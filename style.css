@@ -52,6 +52,54 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* ========================
+   COOKIE BANNER
+======================== */
+#cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    z-index: 9999; /* molto sopra tutto il resto */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+#cookie-banner.show {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#cookie-banner p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+#cookie-banner a {
+    color: #4fc3f7;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+#cookie-banner button {
+    background: #4fc3f7;
+    color: #000;
+    border: none;
+    padding: 8px 12px;
+    margin-left: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
 /* === Navbar elegante migliorata === */
 .navbar {
     position: fixed;
@@ -213,10 +261,9 @@ body {
     pointer-events: none; /* così non interferisce con click */
 }
 
-@media(min-width: 769px) {
+@media (min-width: 769px) {
     .carousel {
-        position: relative;
-        height: auto;
+        height: 75vh; /* <-- ripristina altezza anche su desktop */
         max-height: none;
     }
 
@@ -230,7 +277,8 @@ body {
         width: 100%;
         height: auto;
         max-width: 100%;
-        border-radius: 0; /* niente bordi arrotondati su mobile */
+        border-radius: 0;
+        object-fit: cover;
     }
 }
 @media (max-width: 480px) {
@@ -315,6 +363,21 @@ body {
 }
 
 /* --- SEZIONE SERVIZI --- */
+
+/* --- STILE ICONE SVG INLINE (Font Awesome) --- */
+.servizio .fa-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    fill: black; /* colore mare o blu acceso, modificabile */
+    transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.servizio:hover .fa-icon {
+    transform: scale(1.1);
+    fill: black; /* un tono più scuro al passaggio del mouse */
+}
+
 .servizi {
     text-align: center;
     padding: 50px 20px;
@@ -520,11 +583,26 @@ body {
 
 /* === Footer === */
 footer {
-    background-color: #4b1e1e;
-    color: #FDF5E6;
     text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
+    padding: 20px 10px;
+    background-color: #650101; /* sfondo scuro, da adattare al tuo tema */
+    color: #ddd;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #ffffff; /* un giallo caldo per risaltare */
+    text-decoration: none;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover,
+footer a:focus {
+    color: #ffffff; /* cambia colore al passaggio del mouse */
+    text-decoration: underline;
+    outline: none;
 }
 
 /* === Responsive === */
@@ -646,6 +724,23 @@ footer {
     background-color: #a83232;
 }
 
+.privacy-consent {
+    display: block;
+    font-size: 0.9rem;
+    margin: 1rem 0;
+    color: #00303f;
+}
+
+.privacy-consent input[type="checkbox"] {
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+.privacy-consent a {
+    color: white;
+    text-decoration: underline;
+}
+
 /* menu.html */
 .hero-menu {
     text-align: center;
@@ -653,7 +748,7 @@ footer {
     margin-bottom: 100px;
     padding: 60px 20px 40px;
     background-color: #e4cbb5; /* Colore di fallback nel caso l'immagine non si carichi */
-    background-image: url("https://media.istockphoto.com/id/2221490864/it/foto/tagliatelle-with-bolognese-sauce.jpg?s=612x612&w=0&k=20&c=VJXcoErag-yUcB4bu4tsOdoBuUganEhf0Yw9rSbat7A="); /* Percorso della tua immagine */
+    background-image: url("https://images.unsplash.com/photo-1599172995721-49309fff2f21?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bWVudXxlbnwwfHwwfHx8Mg%3D%3D"); /* Percorso della tua immagine */
     background-size: cover; /* L'immagine copre tutto il contenitore */
     background-position: center; /* Centra l'immagine */
     background-repeat: no-repeat; /* Evita ripetizioni */

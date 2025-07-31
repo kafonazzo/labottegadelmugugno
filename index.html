@@ -15,6 +15,15 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+
+<div id="cookie-banner">
+    <p>
+        Questo sito utilizza Google Maps che potrebbe installare cookie di terze parti.
+        <a href="privacy.html" target="_blank" rel="noopener">Scopri di più</a>.
+    </p>
+    <button id="accept-cookies">OK</button>
+</div>
+
 <div class="wrapper">
 
     <!-- Navbar -->
@@ -34,13 +43,13 @@
     <section class="carousel" data-aos="zoom-in">
         <div class="carousel-container">
             <div class="slide active">
-                <img src="https://media.istockphoto.com/id/636683152/it/foto/la-cena.jpg?s=612x612&w=0&k=20&c=3l0wEr2xRgNyXf42cnqeZFK_8lx2zU8ndSdxvPt9ygw=" alt="Pasta italiana">
+                <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pasta italiana">
             </div>
             <div class="slide">
-                <img src="https://media.istockphoto.com/id/836598602/it/foto/pasti-al-ristorante-confit-danatra-con-verdure-su-sfondo-nero.jpg?s=612x612&w=0&k=20&c=5vnzBvGpvHim5-ZlblzLv9eoVeCw6wY8-iAfRzGsqCM=" alt="Anatra fritta">
+                <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2libyUyMHJpc3RvcmFudGV8ZW58MHx8MHx8fDI%3D" alt="Anatra fritta">
             </div>
             <div class="slide">
-                <img src="https://media.istockphoto.com/id/1422610210/it/foto/costolette-di-costolette-di-agnello-alla-griglia.jpg?s=612x612&w=0&k=20&c=ZI-GGirC5ZQ1rdaawofdjGg0M4b3lMnxcO6o87VALUQ=" alt="Bistecca di manzo">
+                <img src="https://images.unsplash.com/photo-1564759296729-771e78c26df7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2libyUyMHJpc3RvcmFudGV8ZW58MHx8MHx8fDA%3D" alt="Bistecca di manzo">
             </div>
         </div>
         <div class="carousel-overlay-text">Ristorante Bottega Del Mugugno</div>
@@ -56,14 +65,14 @@
                 </div>
             </div>
             <div class="riga inversa" data-aos="fade-left">
-                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5" alt="Sala ristorante elegante">
+                <img src="https://images.unsplash.com/photo-1488992783499-418eb1f62d08?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHJpc3RvcmFudGV8ZW58MHx8MHx8fDI%3D" alt="Sala ristorante elegante">
                 <div class="testo">
                     <h2>Eleganza e Accoglienza</h2>
                     <p>Un ambiente raffinato ma familiare, perfetto per cene romantiche, eventi o semplici serate in compagnia. Il nostro staff ti accoglierà con professionalità e un sorriso, per farti sentire sempre a casa.</p>
                 </div>
             </div>
             <div class="riga" data-aos="fade-right">
-                <img src="https://media.istockphoto.com/id/1446478827/it/foto/uno-chef-sta-cucinando-nella-cucina-del-suo-ristorante.jpg?s=612x612&w=0&k=20&c=2TZGrqU7TAPMOtEVU-lRGRRlA-V663jHgobpI2H4FOI=" alt="Chef al lavoro">
+                <img src="https://images.unsplash.com/photo-1622021142947-da7dedc7c39a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y3VjaW5hJTIwcmlzdG9yYW50ZXxlbnwwfHwwfHx8Mg%3D%3D" alt="Chef al lavoro">
                 <div class="testo">
                     <h2>La nostra cucina</h2>
                     <p>Dalla pasta fresca fatta a mano ai dolci della casa, ogni piatto è preparato al momento, con prodotti stagionali e locali. Offriamo anche un’ampia carta dei vini per accompagnare al meglio ogni portata.</p>
@@ -77,32 +86,38 @@
         <h2>I nostri servizi</h2>
         <div class="servizi-container">
             <div class="servizio" data-aos="zoom-in" data-aos-delay="100">
-                <img src="https://cdn-icons-png.flaticon.com/128/12241/12241342.png" alt="Coperto">
+                <!-- Icona Coperto (utensils) -->
+                <svg class="fa-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M127.9 78.4C127.1 70.2 120.2 64 112 64C103.8 64 96.9 70.2 96 78.3L81.9 213.7C80.6 219.7 80 225.8 80 231.9C80 277.8 115.1 315.5 160 319.6L160 544C160 561.7 174.3 576 192 576C209.7 576 224 561.7 224 544L224 319.6C268.9 315.5 304 277.8 304 231.9C304 225.8 303.4 219.7 302.1 213.7L287.9 78.3C287.1 70.2 280.2 64 272 64C263.8 64 256.9 70.2 256.1 78.4L242.5 213.9C241.9 219.6 237.1 224 231.4 224C225.6 224 220.8 219.6 220.2 213.8L207.9 78.6C207.2 70.3 200.3 64 192 64C183.7 64 176.8 70.3 176.1 78.6L163.8 213.8C163.3 219.6 158.4 224 152.6 224C146.8 224 142 219.6 141.5 213.9L127.9 78.4zM512 64C496 64 384 96 384 240L384 352C384 387.3 412.7 416 448 416L480 416L480 544C480 561.7 494.3 576 512 576C529.7 576 544 561.7 544 544L544 96C544 78.3 529.7 64 512 64z"/></svg>
                 <h3>Coperto incluso</h3>
                 <p>Servizio al tavolo con coperto incluso nel prezzo.</p>
             </div>
             <div class="servizio" data-aos="zoom-in" data-aos-delay="200">
-                <img src="https://cdn-icons-png.flaticon.com/128/100/100631.png" alt="Bagno">
+                <!-- Icona Bagno (toilet) -->
+                <svg class="fa-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M120 64C106.7 64 96 74.7 96 88C96 101.3 106.7 112 120 112L128 112L128 260.9C126.1 262.3 124.2 263.8 122.4 265.3C106.9 278.5 96 296.9 96 319.9C96 366.8 110.3 404 133 432.4C147.2 450.1 164.1 463.7 181.5 474.2L161.6 533.9C158.3 543.7 160 554.4 166 562.7C172 571 181.7 576 192 576L448 576C458.3 576 467.9 571.1 474 562.7C480.1 554.3 481.7 543.6 478.4 533.9L458.6 474.4C476 463.9 492.9 450.3 507.1 432.6C529.8 404.2 544.1 367.1 544.1 320.1C544.1 297 533.2 278.6 517.7 265.5C515.9 264 514 262.5 512.1 261.1L512.1 112.2L520.1 112.2C533.4 112.2 544.1 101.5 544.1 88.2C544.1 74.9 533.3 64 520 64L120 64zM192 144C192 135.2 199.2 128 208 128L240 128C248.8 128 256 135.2 256 144C256 152.8 248.8 160 240 160L208 160C199.2 160 192 152.8 192 144zM320 352C231.6 352 160 337.7 160 320C160 302.3 231.6 288 320 288C408.4 288 480 302.3 480 320C480 337.7 408.4 352 320 352z"/></svg>
                 <h3>Bagno Accessibile</h3>
                 <p>Servizi igienici comodi e adatti anche a persone con disabilità.</p>
             </div>
             <div class="servizio" data-aos="zoom-in" data-aos-delay="300">
-                <img src="https://cdn-icons-png.flaticon.com/128/159/159599.png" alt="WiFi">
+                <!-- Icona Wi-Fi (wifi) -->
+                <svg class="fa-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M320 160C229.1 160 146.8 196 86.3 254.6C73.6 266.9 53.3 266.6 41.1 253.9C28.9 241.2 29.1 220.9 41.8 208.7C113.7 138.9 211.9 96 320 96C428.1 96 526.3 138.9 598.3 208.7C611 221 611.3 241.3 599 253.9C586.7 266.5 566.4 266.9 553.8 254.6C493.2 196 410.9 160 320 160zM272 496C272 469.5 293.5 448 320 448C346.5 448 368 469.5 368 496C368 522.5 346.5 544 320 544C293.5 544 272 522.5 272 496zM200 390.2C188.3 403.5 168.1 404.7 154.8 393C141.5 381.3 140.3 361.1 152 347.8C193 301.4 253.1 272 320 272C386.9 272 447 301.4 488 347.8C499.7 361.1 498.4 381.3 485.2 393C472 404.7 451.7 403.4 440 390.2C410.6 356.9 367.8 336 320 336C272.2 336 229.4 356.9 200 390.2z"/></svg>
                 <h3>Wi-Fi Gratuito</h3>
                 <p>Connettiti gratuitamente con il nostro Wi-Fi.</p>
             </div>
             <div class="servizio" data-aos="zoom-in" data-aos-delay="400">
-                <img src="https://cdn-icons-png.flaticon.com/128/3027/3027127.png" alt="Take Away">
+                <!-- Icona Take Away (basket-shopping) -->
+                <svg class="fa-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M320 64C326.6 64 332.9 66.7 337.4 71.5L481.4 223.5L481.9 224L560 224C577.7 224 592 238.3 592 256C592 270.5 582.4 282.7 569.2 286.7L523.1 493.9C516.6 523.2 490.6 544 460.6 544L179.3 544C149.3 544 123.3 523.2 116.8 493.9L70.8 286.7C57.6 282.8 48 270.5 48 256C48 238.3 62.3 224 80 224L158.1 224L158.6 223.5L302.6 71.5C307.1 66.7 313.4 64 320 64zM320 122.9L224.2 224L415.8 224L320 122.9zM240 328C240 314.7 229.3 304 216 304C202.7 304 192 314.7 192 328L192 440C192 453.3 202.7 464 216 464C229.3 464 240 453.3 240 440L240 328zM320 304C306.7 304 296 314.7 296 328L296 440C296 453.3 306.7 464 320 464C333.3 464 344 453.3 344 440L344 328C344 314.7 333.3 304 320 304zM448 328C448 314.7 437.3 304 424 304C410.7 304 400 314.7 400 328L400 440C400 453.3 410.7 464 424 464C437.3 464 448 453.3 448 440L448 328z"/></svg>
                 <h3>Take Away</h3>
                 <p>Prenota e ritira i tuoi piatti preferiti da asporto.</p>
             </div>
             <div class="servizio" data-aos="zoom-in" data-aos-delay="500">
-                <img src="https://cdn-icons-png.flaticon.com/128/672/672675.png" alt="Animali">
+                <!-- Icona Pet Friendly (paw) -->
+                <svg class="fa-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M298.5 156.9C312.8 199.8 298.2 243.1 265.9 253.7C233.6 264.3 195.8 238.1 181.5 195.2C167.2 152.3 181.8 109 214.1 98.4C246.4 87.8 284.2 114 298.5 156.9zM164.4 262.6C183.3 295 178.7 332.7 154.2 346.7C129.7 360.7 94.5 345.8 75.7 313.4C56.9 281 61.4 243.3 85.9 229.3C110.4 215.3 145.6 230.2 164.4 262.6zM133.2 465.2C185.6 323.9 278.7 288 320 288C361.3 288 454.4 323.9 506.8 465.2C510.4 474.9 512 485.3 512 495.7L512 497.3C512 523.1 491.1 544 465.3 544C453.8 544 442.4 542.6 431.3 539.8L343.3 517.8C328 514 312 514 296.7 517.8L208.7 539.8C197.6 542.6 186.2 544 174.7 544C148.9 544 128 523.1 128 497.3L128 495.7C128 485.3 129.6 474.9 133.2 465.2zM485.8 346.7C461.3 332.7 456.7 295 475.6 262.6C494.5 230.2 529.6 215.3 554.1 229.3C578.6 243.3 583.2 281 564.3 313.4C545.4 345.8 510.3 360.7 485.8 346.7zM374.1 253.7C341.8 243.1 327.2 199.8 341.5 156.9C355.8 114 393.6 87.8 425.9 98.4C458.2 109 472.8 152.3 458.5 195.2C444.2 238.1 406.4 264.3 374.1 253.7z"/></svg>
                 <h3>Pet Friendly</h3>
                 <p>I tuoi amici a quattro zampe sono i benvenuti!</p>
             </div>
             <div class="servizio" data-aos="zoom-in" data-aos-delay="600">
-                <img src="https://cdn-icons-png.flaticon.com/128/11865/11865927.png" alt="Parcheggio">
+                <!-- Icona Parcheggio (square-parking) -->
+                <svg class="fa-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M160 96C124.7 96 96 124.7 96 160L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 160C544 124.7 515.3 96 480 96L160 96zM288 320L336 320C353.7 320 368 305.7 368 288C368 270.3 353.7 256 336 256L288 256L288 320zM336 384L288 384L288 416C288 433.7 273.7 448 256 448C238.3 448 224 433.7 224 416L224 232C224 209.9 241.9 192 264 192L336 192C389 192 432 235 432 288C432 341 389 384 336 384z"/></svg>
                 <h3>Parcheggio</h3>
                 <p>Parcheggio disponibile vicino al ristorante.</p>
             </div>
@@ -139,6 +154,7 @@
     <!-- Footer -->
     <footer data-aos="fade-up">
         <p>&copy; 2025 Ristorante Bottega Del Mugugno - Tutti i diritti riservati - Realizzato da Fabio Merello</p>
+        <a href="privacy.html">Privacy Policy</a>
     </footer>
 </div>
 
