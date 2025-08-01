@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo Cookie Banner</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      min-height: 200vh;
+      padding: 2rem;
+      background: linear-gradient(#e0f7ff, #a0c9ff);
+    }
+
+    h1 {
+      margin-bottom: 2rem;
+    }
+
+    /* ========================
+       COOKIE BANNER
+    ========================= */
+    #cookie-banner {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%) translateY(50px);
+      opacity: 0;
+      background-color: #00303f;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      transition: all 0.5s ease;
+      z-index: 9999;
+      display: none;
+      max-width: 90%;
+      width: 600px;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #cookie-banner.show {
+      display: flex;
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    #cookie-banner button {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: white;
+      color: #00303f;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #cookie-banner button:hover {
+      background-color: #005fa3;
+      color: white;
+    }
+
+    #cookie-banner a {
+      color: white;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Benvenuto nella demo del Cookie Banner</h1>
+<p>Scrolla la pagina o ricarica più volte per testare il comportamento.</p>
+
+<!-- COOKIE BANNER -->
+<div id="cookie-banner">
+  <p>
+    Questo sito utilizza Google Maps che potrebbe installare cookie di terze parti.
+    <a href="privacy.html" target="_blank" rel="noopener">Scopri di più</a>.
+  </p>
+  <button id="accept-cookies">OK</button>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const banner = document.getElementById('cookie-banner');
+    const acceptBtn = document.getElementById('accept-cookies');
+
+    function hideBanner() {
+      if (!banner) return;
+      banner.classList.remove('show');
+      setTimeout(() => {
+        banner.style.display = 'none';
+      }, 600); // attesa per animazione
+    }
+
+    function showBanner() {
+      if (!banner) return;
+      banner.style.display = 'flex';
+      setTimeout(() => {
+        banner.classList.add('show');
+      }, 50);
+    }
+
+    // RIMUOVI IL COMMENTO QUI SOTTO PER TESTARE SEMPRE IL BANNER
+    // localStorage.removeItem('cookieAccepted');
+
+    if (banner && localStorage.getItem('cookieAccepted') !== 'true') {
+      showBanner();
+    }
+
+    if (acceptBtn) {
+      acceptBtn.addEventListener('click', () => {
+        localStorage.setItem('cookieAccepted', 'true');
+        hideBanner();
+      });
+    }
+  });
+</script>
+
+</body>
+</html>
